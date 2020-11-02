@@ -1,0 +1,46 @@
+{
+  "name": "find-pid-from-port",
+  "version": "0.1.0",
+  "description": "Find the pid(s) of a process on a given port",
+  "keywords": [
+    "netstat",
+    "lsof",
+    "net",
+    "stat",
+    "port",
+    "tcp",
+    "udp",
+    "activity",
+    "pid",
+    "pids"
+  ],
+  "homepage": "https://github.com/ksathyanm/find-pid-from-port#readme",
+  "bugs": "https://github.com/ksathyanm/find-pid-from-port/issues",
+  "repository": "ksathyanm/find-pid-from-port",
+  "license": "MIT",
+  "author": "Sathyamoorthi Kandhasamy",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "ci": "npm run lint && npm run test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "mocha ./test.js --timeout 10000"
+  },
+  "dependencies": {
+    "selective-whitespace": "^1.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^7.12.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
